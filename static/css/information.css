@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Consolas';
+    src: local('Consolas');
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Consolas', monospace;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+#content {
+    width: calc(100% - 250px); 
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto; 
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #005086;
+    color: #fff;
+    transition: all 0.3s;
+    height: 100%;
+}
+
+.navbar {
+    background-color: #005086;
+    height: 100%;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+    height: 100%;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #005086;
+    height: 100%;
+}
+
+.list-unstyled {
+    padding-left: 20px;
+    height: 100%;
+}
+
+.list-unstyled a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.list-unstyled a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    height: 100%;
+}
+
+.content-wrapper {
+    padding: 15px;
+    
+}
+
+

@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'Consolas';
+    src: local('Consolas');
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Consolas', monospace;
+}
+
+.editor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.editor-header h2 {
+    font-family: 'Consolas', monospace;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #005086;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.navbar {
+    background-color: #005086;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #005086;
+}
+
+.list-unstyled {
+    padding-left: 20px;
+}
+
+.list-unstyled a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.list-unstyled a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+.content-wrapper {
+    padding: 15px;
+}
+
+.CodeMirror {
+    color: rgba(155, 151, 151, 0.19);
+    border: 0px solid #ddd;
+    border-radius: 0px;
+    height: 610px;
+    width: 530px;
+    font-size: 14px;
+    padding: 0px;
+    margin-bottom: 15px;
+    margin-left: -15px;
+    margin-top: -15px;
+    color: #333;
+    overflow: auto;
+    display: inline-block !important;
+    resize: horizontal;
+    min-width: 530px;
+    
+}
+
+
+.block-btn {
+    display: block;
+    width: 40%;
+    text-align: left;
+    background-color: #005086;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.block-btn-full {
+
+    width: 39.1%;
+    text-align: left;
+    background-color: #005086;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 2px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#python3Tab {
+    background-color: #005086;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-size: 16px;
+    width: 400px;
+    align-items: center;
+    margin-right: 5px; 
+}
+
+#outputTab{
+    background-color: #005086;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: left;
+    margin-right: 10px;
+    width: 400px;
+}
+
+#runButton {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    outline: none;
+    align-self: start;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-right: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.scrollable-div {
+    height: 590px; 
+    margin-top: -15px;
+    overflow: auto;
+    background-color: #333;
+    color: #fff;
+    margin-left: 190px;
+    white-space: nowrap; 
+    overflow-x: auto; 
+}
+
+.col-6 {
+    width: 50%; 
+    padding: 0;
+    transition: all 0.3s; 
+}
+
+.active .col-6 {
+    width: 44%;
+    margin-left: 10px; 
+}
+
+#tabAboveTextArea {
+    display: block;
+    margin-top: 20px;
+    background-color: #005086;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.traceTable th, .traceTable td {
+    margin-left: 10px;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+
+#resultContainer{
+    
+    width: 600px; 
+    min-width: 500px !important; 
+    max-width: none !important; 
+    resize: horizontal;
+    overflow: auto;
+    background-color: #333;
+
+    color: #fff;
+}
+
+#resultContainer table {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+}
+
+.highlighted-line {
+    background-color: rgb(84, 208, 214);
+    opacity: 20%;
+    padding: 2px 0; 
+    display: inline-block; 
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.highlight-green {
+    background-color: green; 
+    color: white; 
+    font-weight: bold;
+}
+
